@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZNT Shop</title>
+
+  <!-- Fonts, Icons, CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Background -->
+<div class="background-container">
+  <div class="background-gradient"></div>
+  <!-- Pulse Dots -->
+  <div class="pulse-dot" style="top:5.2%; left:11.3%; width:1.15px; height:1.15px; animation-delay:2.6s;"></div>
+  <div class="pulse-dot" style="top:57.5%; left:66%; width:2.2px; height:2.2px; animation-delay:0.8s;"></div>
+  <div class="pulse-dot" style="top:17.4%; left:41.1%; width:1.35px; height:1.35px; animation-delay:1.8s;"></div>
+  <div class="pulse-dot" style="top:89%; left:55.9%; width:3.35px; height:3.35px; animation-delay:1.4s;"></div>
+  <div class="pulse-dot" style="top:22%; left:83%; width:2px; height:2px; animation-delay:0.5s;"></div>
+  <div class="pulse-dot" style="top:44%; left:22%; width:1.5px; height:1.5px; animation-delay:1.2s;"></div>
+  <div class="pulse-dot" style="top:65%; left:30%; width:2.3px; height:2.3px; animation-delay:0.3s;"></div>
+  <div class="pulse-dot" style="top:12%; left:70%; width:1.8px; height:1.8px; animation-delay:2.1s;"></div>
+  <div class="pulse-dot" style="top:75%; left:80%; width:2.7px; height:2.7px; animation-delay:1.5s;"></div>
+  <div class="pulse-dot" style="top:35%; left:50%; width:3px; height:3px; animation-delay:1s;"></div>
+  <!-- Lines -->
+  <svg class="lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <line x1="10%" y1="20%" x2="30%" y2="25%" />
+    <line x1="70%" y1="60%" x2="85%" y2="65%" />
+    <line x1="40%" y1="80%" x2="60%" y2="70%" />
+    <line x1="20%" y1="50%" x2="35%" y2="60%" />
+    <line x1="55%" y1="15%" x2="75%" y2="25%" />
+  </svg>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg py-2 px-4" style="backdrop-filter: blur(12px); background-color: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); font-family: 'Prompt', sans-serif;">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold fs-4" href="/"><span class="gradient-text">ZNT</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link d-flex gap-2 nav-animated" href="/"><i class="bi bi-shop"></i> Store</a></li>
+        <li class="nav-item"><a class="nav-link d-flex gap-2 nav-animated" href="/"><i class="bi bi-credit-card-2-front"></i> Topup</a></li>
+        <li class="nav-item"><a class="nav-link d-flex gap-2 nav-animated" href="/"><i class="bi bi-grid"></i> Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link d-flex gap-2 nav-animated" href="/"><i class="bi bi-file-earmark-code"></i> API Docs</a></li>
+      </ul>
+      <a href="/" class="btn-custom fw-semibold d-flex align-items-center gap-2">
+        <i class="bi bi-box-arrow-in-right"></i> Login
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="hero" class="text-center my-5 py-6 fade-in-up" style="font-family: 'Prompt', sans-serif; padding-top: 120px;">
+  <div class="container">
+    <h1 class="animate-glow display-4 fw-bold mb-3">ZNT DIGITAL</h1>
+    <div class="gradient-line mx-auto mb-3 scale-x-animate"></div>
+
+    <p class="lead text-light fade-in-up delay-1 mx-auto w-75" style="max-width: 600px;">
+      A next-generation dashboard platform in Thailand designed for simplicity, speed, and innovation.
+    </p>
+
+    <div class="pt-4 fade-in-up delay-2">
+      <a href="#products" class="btn btn-gradient px-5 py-3 fs-5 fw-bold d-inline-flex align-items-center gap-3 shadow-lg">
+        <i class="bi bi-bag-fill fs-5"></i>
+        Explore Products
+        <i class="bi bi-arrow-right-short fs-4"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="mb-5 py-5" style="font-family: 'Prompt', sans-serif;">
+  <div class="text-center mb-4">
+    <h2 class="text-white fw-bold display-5 mb-3 animate-glow">Our Highlights</h2>
+    <div class="mx-auto" style="width: 80px; height: 4px; border-radius: 9999px; background: linear-gradient(to right, #3b82f6, #8b5cf6);"></div>
+  </div>
+
+  <div class="row justify-content-center g-4" style="max-width: 900px; margin: 0 auto;">
+
+    <!-- Feature 1 -->
+    <div class="col-12 col-md-4">
+      <div class="feature-card p-4 rounded-4 text-center h-100">
+        <div class="mb-3 glow-icon" style="font-size: 2rem;">
+          <svg viewBox="0 0 576 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradientStar" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#3b82f6">
+                  <animate attributeName="stop-color" values="#3b82f6;#8b5cf6;#ec4899;#3b82f6" dur="6s" repeatCount="indefinite" />
+                </stop>
+                <stop offset="100%" stop-color="#8b5cf6">
+                  <animate attributeName="stop-color" values="#8b5cf6;#ec4899;#3b82f6;#8b5cf6" dur="6s" repeatCount="indefinite" />
+                </stop>
+              </linearGradient>
+            </defs>
+            <path fill="url(#gradientStar)" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-white fw-bold mb-2">Quality Products</h3>
+        <p class="text-secondary small">High-quality products with certified standards.</p>
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="col-12 col-md-4">
+      <div class="feature-card p-4 rounded-4 text-center h-100">
+        <div class="mb-3 glow-icon" style="font-size: 2rem;">
+          <svg viewBox="0 0 576 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradientTag" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#f59e0b">
+                  <animate attributeName="stop-color" values="#f59e0b;#f43f5e;#3b82f6;#f59e0b" dur="6s" repeatCount="indefinite" />
+                </stop>
+                <stop offset="100%" stop-color="#f43f5e">
+                  <animate attributeName="stop-color" values="#f43f5e;#3b82f6;#f59e0b;#f43f5e" dur="6s" repeatCount="indefinite" />
+                </stop>
+              </linearGradient>
+            </defs>
+            <path fill="url(#gradientTag)" d="M485.5 0L576 160H474.9L405.7 0h79.8zm-128 0l69.2 160H149.3L218.5 0h139zm-267 0h79.8l-69.2 160H0L90.5 0zM0 192h100.7l123 251.7c1.5 3.1-2.7 5.9-5 3.3L0 192zm148.2 0h279.6l-137 318.2c-1 2.4-4.5 2.4-5.5 0L148.2 192zm204.1 251.7l123-251.7H576L357.3 446.9c-2.3 2.7-6.5-.1-5-3.2z"></path>
+          </svg>
+        </div>
+        <h3 class="text-white fw-bold mb-2">Affordable Prices</h3>
+        <p class="text-secondary small">Competitive prices that offer great value.</p>
+      </div>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="col-12 col-md-4">
+      <div class="feature-card p-4 rounded-4 text-center h-100">
+        <div class="mb-3 glow-icon" style="font-size: 2rem;">
+          <svg viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradientShield" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#22d3ee">
+                  <animate attributeName="stop-color" values="#22d3ee;#a78bfa;#f472b6;#22d3ee" dur="6s" repeatCount="indefinite" />
+                </stop>
+                <stop offset="100%" stop-color="#a78bfa">
+                  <animate attributeName="stop-color" values="#a78bfa;#f472b6;#22d3ee;#a78bfa" dur="6s" repeatCount="indefinite" />
+                </stop>
+              </linearGradient>
+            </defs>
+            <path fill="url(#gradientShield)" d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path>
+          </svg>
+        </div>
+        <h3 class="text-white fw-bold mb-2">Instant Delivery</h3>
+        <p class="text-secondary small">Receive your product immediately after payment, securely.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="py-5 fade-in-up" style="font-family: 'Prompt', sans-serif;">
+  <div class="container">
+    <h2 class="text-center mb-4 animate-glow">Featured Products</h2>
+    <div class="row g-4" id="product-list"></div>
+  </div>
+</section>
+
+<!-- Product Render -->
+<script>
+  const products = [
+    { title: "Discord Nitro 1 Month", description: "Available for new and old users", price: "฿49.00", img: "https://cdn1.epicgames.com/offer/5f3c898b2a3244af99e9900e015717f8/EGS_Discord_Nitro_2560x1440_withlogo_2560x1440-944994658df3b04d0c4940be832da19e_2560x1440-944994658df3b04d0c4940be832da19e" },
+    { title: "Spotify Premium", description: "Valid for 3 months", price: "฿89.00", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW8d8Pu-9KEXMWgWQOAPdS8BFg1-CUJHB_wA&s" },
+    { title: "Grow A Garden", description: "See full list", price: "Free", img: "https://sm.ign.com/ign_ap/cover/g/grow-a-gar/grow-a-garden-roblox_rjdk.jpg" },
+    { title: "Candy Blossom", description: "Sells 1 Candy Blossom Fruit worth 1T - 3T", price: "฿199.00", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqifl3QPx6jEs0JADxbsUpwyKcrX3o1u34w&s" },
+    { title: "Netflix Standard", description: "1 Month Access", price: "฿129.00", img: "https://store-images.s-microsoft.com/image/apps.56161.9007199266246365.1d5a6a53-3c49-4f80-95d7-78d76b0e05d0.a3e87fea-e03e-4c0a-8f26-9ecef205fa7b" },
+    { title: "Xbox Game Pass", description: "Full access for 1 month", price: "฿99.00", img: "https://products.eneba.games/resized-products/7j52YH7mRgoslwc1IUe-MwLso7v1c0LYLo85V58fo00_350x200_1x-0.jpeg" },
+    { title: "Prime Video", description: "1 Month Access", price: "฿149.00", img: "https://m.media-amazon.com/images/G/01/primevideo/seo/primevideo-seo-logo.png" },
+    { title: "Google Play Gift Card", description: "Worth 500 Baht", price: "฿500.00", img: "https://lh3.googleusercontent.com/lLRmOPbwN8ixY40afGeA6KyqCmQvYy1whTzSgHvIdE6tOITJ2R-Dxki6JOxw106kdd4Z2BOXzK-Glz8q22NTIDsQ45xc1MqwVMs3Y7n-Rh9XFycgSbk4" }
+  ];
+
+  const container = document.getElementById("product-list");
+  products.forEach(product => {
+    const col = document.createElement("div");
+    col.className = "col-12 col-sm-6 col-md-4 col-lg-3";
+    col.innerHTML = `
+      <div class="product-card">
+        <img src="${product.img}" alt="${product.title}" />
+        <div class="p-3">
+          <h5 class="card-title">${product.title}</h5>
+          <p class="text-white-50 mb-2">${product.description}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="fw-bold fs-5 text-success">${product.price}</span>
+            <a href="#" class="btn-buy-now">Buy Now</a>
+          </div>
+        </div>
+      </div>`;
+    container.appendChild(col);
+  });
+</script>
+
+<!-- Footer -->
+<footer class="footer-section fade-in-up position-relative overflow-hidden">
+  <!-- Background Blur Circles -->
+  <div class="footer-blur-layers position-absolute top-0 start-0 w-100 h-100 z-n1">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+  </div>
+
+  <div class="container py-5 text-white position-relative z-1">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <h2 class="gradient-text fw-bold mb-2">ZNT</h2>
+        <p class="text-white-50 small mb-0">
+          Thailand’s most trusted script and dashboard platform for over 3 years, delivering safety and premium support.
+        </p>
+      </div>
+
+      <div class="col-md-2">
+        <h6 class="fw-semibold text-gradient-blue mb-3">Main Menu</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">Categories</a></li>
+          <li><a href="#" class="footer-link">Top Up</a></li>
+          <li><a href="#" class="footer-link">Order History</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="fw-semibold text-gradient-purple mb-3">Support</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="footer-link">How to Use</a></li>
+          <li><a href="#" class="footer-link">Contact Us</a></li>
+          <li><a href="#" class="footer-link">FAQ</a></li>
+          <li><a href="#" class="footer-link">Report an Issue</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="fw-semibold text-gradient-cyan mb-3">Contact</h6>
+        <ul class="list-unstyled small">
+          <li>
+            <a href="mailto:contact@zntdigital.com" class="footer-contact d-flex align-items-center">
+              <i class="bi bi-envelope-fill me-2"></i> contact@zntdigital.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+0000000000" class="footer-contact d-flex align-items-center">
+              <i class="bi bi-telephone-fill me-2"></i> 000‑000‑0000
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top pt-3 mt-4 small text-white-50 gap-2">
+      <p class="mb-0">&copy; 2025 ZNT DIGITAL. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Use</a>
+        <a href="#" class="footer-link">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Script For Background -->
+<script>
+  const hero = document.getElementById("hero");
+  const lines = document.querySelector(".lines");
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      lines.style.opacity = entry.isIntersecting ? "0" : "1";
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(hero);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

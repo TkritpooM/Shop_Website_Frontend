@@ -1,0 +1,748 @@
+/* ===== General Body ===== */
+body {
+  background-color: #000000;
+  color: white;
+  font-family: 'Prompt', sans-serif;
+  margin-top: 70px; /* To avoid navbar overlap */
+}
+
+/* ===== Navbar Brand ===== */
+.navbar-brand {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  background: linear-gradient(90deg, #7da0fa, #b8a1fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+  transition: background-position 0.5s ease;
+}
+
+.navbar-brand:hover {
+  background-position: 100% 0;
+  cursor: pointer;
+}
+
+/* ===== Gradient Text ===== */
+.gradient-text {
+  background: linear-gradient(to right, #7da0fa, #b8a1fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== Glow Animation ===== */
+.animate-glow {
+  font-weight: 700;
+  text-shadow: 0 0 10px #7da0fa, 0 0 20px #b8a1fa;
+}
+
+/* ===== Gradient Line ===== */
+.gradient-line {
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(to right, #7da0fa, #b8a1fa);
+  border-radius: 10px;
+  margin-top: 10px;
+  animation: scaleX 2s ease-in-out infinite alternate;
+}
+
+@keyframes scaleX {
+  0% {
+    transform: scaleX(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* ===== Fade In Up Animation ===== */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Buttons ===== */
+
+/* Gradient button : Login */
+.btn-custom {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #e0e0ff;
+  border: 1.8px solid rgba(125, 160, 250, 0.8);
+  border-radius: 1.2rem; /* ขอบมนมากขึ้น */
+  padding: 0.5rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 0 12px rgba(125, 160, 250, 0.4);
+  cursor: pointer;
+  transition:
+    background-color 0.4s ease,
+    box-shadow 0.4s ease,
+    transform 0.3s ease,
+    border-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.btn-custom i {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: rgba(125, 160, 250, 0.25);
+  border-color: #b8a1fa;
+  box-shadow:
+    0 0 10px #b8a1fa,
+    0 0 20px #7da0fa;
+  transform: scale(1.03);
+}
+
+.btn-custom:hover i,
+.btn-custom:focus i {
+  transform: rotate(5deg);
+}
+
+/* Gradient button */
+.btn-gradient {
+  background: linear-gradient(90deg, #7da0fa, #b8a1fa);
+  color: #fff;
+  border-radius: 2.4rem;
+  padding: 0.6rem 2.2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow:
+    0 4px 15px rgba(125, 160, 250, 0.6),
+    0 0 35px rgba(184, 161, 250, 0.8);
+  border: none;
+  cursor: pointer;
+  transition:
+    box-shadow 0.4s ease,
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.btn-gradient:hover {
+  box-shadow:
+    0 6px 10px #b8a1fa,
+    0 0 20px #7da0fa;
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+.feature-card:hover {
+  border-color: rgba(59, 130, 246, 0.5); /* สีน้ำเงิน */
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+  transform: translateY(-8px);
+}
+
+.glow-icon svg {
+  filter: drop-shadow(0 0 6px rgba(139, 92, 246, 0.6)) drop-shadow(0 0 12px rgba(139, 92, 246, 0.4));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.glow-icon:hover svg {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.8)) drop-shadow(0 0 20px rgba(192, 132, 252, 0.5));
+}
+
+/* ===== Product Card Styles ===== */
+.product-card {
+  position: relative;
+  background: rgba(25, 25, 40, 0.7);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+  cursor: pointer;
+  color: white;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 4px 20px rgba(59, 130, 246, 0.6),
+    0 0 25px rgba(139, 92, 246, 0.7);
+  background-color: rgba(35, 35, 60, 0.85);
+  z-index: 10;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.12);
+  filter: brightness(1.15);
+}
+
+/* Gradient top border line */
+.product-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #3b82f6, #8b5cf6, transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.product-card:hover::before {
+  opacity: 1;
+}
+
+/* Pulse dots animation */
+.product-card .pulse-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  opacity: 0;
+  animation: pulse 2s infinite;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px #3b82f6);
+}
+
+.product-card:hover .pulse-dot {
+  opacity: 1;
+}
+
+/* ===== Button Buy Now ===== */
+.btn-buy-now {
+  background: linear-gradient(135deg, #3cb371, #00c9a7, #6ee7b7);
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.4rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.925rem;
+  line-height: 1;
+  box-shadow:
+    0 2px 8px rgba(0, 201, 167, 0.3),
+    0 0 12px rgba(0, 201, 167, 0.15);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-buy-now:hover {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow:
+    0 4px 16px rgba(0, 201, 167, 0.5),
+    0 0 24px rgba(110, 231, 183, 0.4);
+  filter: brightness(1.1);
+}
+
+/* ===== Pulse Animation ===== */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+/* ===== Footer Styles ===== */
+.footer-section {
+  position: relative;
+  background-color: rgba(11, 11, 26, 0.3); /* สีพื้นหลังโปร่งแสง */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 30px rgba(125, 160, 250, 0.08);
+  color: #cccfffcc;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  z-index: 1;
+  padding: 4rem 2rem;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.footer-link:hover {
+  color: #7da0fa;
+  text-decoration: underline;
+}
+
+.footer-contact {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-contact:hover {
+  color: #7da0fa;
+  transform: scale(1.03);
+}
+
+/* ===== Text Gradients ===== */
+.text-gradient-blue {
+  background: linear-gradient(to right, #7da0fa, #b8a1fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(to right, #b88fff, #ff9df5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(to right, #90e0ef, #48cae4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== Background Decorative Circles ===== */
+.footer-blur-layers {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.footer-blur-layers .circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.1;
+  animation: pulseCircle 10s infinite ease-in-out;
+}
+
+.circle-1 {
+  top: 20%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  background: #3b82f6;
+}
+
+.circle-2 {
+  bottom: 15%;
+  right: 15%;
+  width: 300px;
+  height: 300px;
+  background: #a855f7;
+  animation-delay: 3s;
+}
+
+.circle-3 {
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  background: #22d3ee;
+  animation-delay: 6s;
+}
+
+@keyframes pulseCircle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.2;
+  }
+}
+
+/* ===== Background Container Fixed Fullscreen ===== */
+.background-container {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  z-index: 0; /* อยู่ด้านหลัง navbar และเนื้อหา */
+  pointer-events: none; /* ไม่ขวางการคลิก */
+  overflow: hidden;
+  user-select: none;
+}
+
+/* ===== Background Gradient Blur ===== */
+.background-gradient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 25% 40%, rgba(125, 160, 250, 0.3), transparent 70%),
+    radial-gradient(circle at 75% 80%, rgba(184, 161, 250, 0.2), transparent 70%),
+    radial-gradient(circle at 15% 70%, rgba(120, 130, 250, 0.2), transparent 70%);
+  filter: blur(60px);
+  z-index: 1;
+}
+
+/* ===== Pulse Dot ===== */
+.pulse-dot {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: radial-gradient(circle, #ffffff 40%, #7da0fa 100%);
+  border-radius: 50%;
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 4px #ffffff)
+    drop-shadow(0 0 10px #7da0fa)
+    drop-shadow(0 0 20px #7da0fa);
+  animation: pulse 2.5s infinite ease-in-out;
+  z-index: 2;
+}
+
+/* ===== Lines Connecting Pulse Dots ===== */
+.lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+.lines line {
+  stroke: #7da0fa;
+  stroke-width: 0.1;
+  stroke-opacity: 1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  animation: linePulse 3s ease-in-out infinite;
+}
+
+@keyframes linePulse {
+  0%, 100% {
+    stroke-opacity: 1;
+  }
+  50% {
+    stroke-opacity: 0.4;
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Mobile Responsive & Luxury Style Improvements ===== */
+@media (max-width: 768px) {
+
+  body {
+    margin-top: 56px; /* navbar สูงขึ้นเล็กน้อยสำหรับมือถือ */
+    font-size: 16px;
+    background-color: #0a0a1a; /* สีพื้นหลังเข้มลึกขึ้น */
+  }
+
+  /* Navbar */
+  .navbar {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    background: linear-gradient(90deg, #7da0fa, #b8a1fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .navbar-toggler {
+    border-radius: 0.5rem;
+    border: 1.5px solid rgba(125, 160, 250, 0.7);
+    transition: border-color 0.3s ease;
+  }
+
+  .navbar-toggler:hover {
+    border-color: #b8a1fa;
+  }
+
+  /* Navbar menu items */
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    background-color: rgba(125, 160, 250, 0.15);
+    color: #b8a1fa;
+  }
+
+  /* Login Button */
+  .btn-custom {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 12px rgba(125, 160, 250, 0.5);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .btn-custom:hover,
+  .btn-custom:focus {
+    box-shadow: 0 0 20px #b8a1fa;
+    transform: scale(1.1);
+  }
+
+  /* Hero Section */
+  #hero h1.animate-glow {
+    font-size: 2.25rem;
+    text-shadow:
+      0 0 8px #7da0fa,
+      0 0 18px #b8a1fa,
+      0 0 30px #b8a1fa;
+  }
+
+  #hero .btn-gradient {
+    box-shadow:
+      0 0 10px rgba(125, 160, 250, 0.4),
+      0 0 20px rgba(184, 161, 250, 0.4);
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #hero .btn-gradient:hover {
+    box-shadow:
+      0 0 16px rgba(184, 161, 250, 0.6),
+      0 0 32px rgba(125, 160, 250, 0.6);
+    transform: translateY(-2px) scale(1.05);
+  }
+
+  .gradient-line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hero p.lead {
+    font-size: 1rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-gradient {
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    box-shadow:
+      0 0 10px #7da0fa,
+      0 0 20px #b8a1fa;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .btn-gradient:hover {
+    box-shadow:
+      0 0 18px #b8a1fa,
+      0 0 40px #7da0fa;
+  }
+
+  /* Products Section */
+  .product-card {
+    border-radius: 1.5rem;
+    box-shadow:
+      0 8px 15px rgba(125, 160, 250, 0.3),
+      0 0 30px rgba(139, 92, 246, 0.25);
+    background: rgba(25, 25, 45, 0.9);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+  }
+
+  .product-card:hover {
+    box-shadow:
+      0 12px 30px rgba(125, 160, 250, 0.6),
+      0 0 45px rgba(139, 92, 246, 0.7);
+    transform: translateY(-6px) scale(1.05);
+  }
+
+  .product-card img {
+    border-radius: 1.5rem 1.5rem 0 0;
+    height: 160px;
+  }
+
+  .product-card h5 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 0.7rem;
+    color: #dbe3ff;
+  }
+
+  .product-card p {
+    font-size: 1rem;
+    color: #c0cdfccc;
+    margin-bottom: 1rem;
+  }
+
+  .btn-buy-now {
+    padding: 0.35rem 1rem;
+    font-size: 0.85rem;
+    box-shadow:
+      0 1.5px 6px rgba(0, 201, 167, 0.25),
+      0 0 10px rgba(0, 201, 167, 0.1);
+  }
+
+  .btn-buy-now:hover {
+    transform: translateY(-1.5px) scale(1.05);
+    box-shadow:
+      0 3px 10px rgba(0, 201, 167, 0.4),
+      0 0 18px rgba(110, 231, 183, 0.35);
+  }
+
+  /* Footer */
+  .footer-section {
+    padding: 4rem 2rem;
+    background-color: #0b0b1a;
+    color: #cccfffcc;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #7da0fa;
+    text-decoration: underline;
+  }
+
+  .footer-contact {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.3s ease;
+  }
+
+  .footer-contact:hover {
+    color: #7da0fa;
+    transform: scale(1.05);
+  }
+
+  /* Adjust navbar brand font size on mobile */
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  /* Background pulses and lines remain subtle on mobile */
+  .background-gradient {
+    filter: blur(40px);
+  }
+
+  .pulse-dot {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  .lines line {
+    stroke-width: 0.07;
+  }
+}
+
+/* Responsive Footer Styles */
+@media (max-width: 768px) {
+  .footer-section {
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .footer-section .row > div {
+    margin-bottom: 2rem;
+  }
+
+  .footer-section h5,
+  .footer-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-link,
+  .footer-contact {
+    font-size: 0.95rem;
+  }
+
+  .footer-section .border-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .footer-section .border-top p,
+  .footer-section .border-top .d-flex {
+    justify-content: center;
+  }
+
+  .footer-contact {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .footer-contact i {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+  }
+}

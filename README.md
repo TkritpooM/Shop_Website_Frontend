@@ -25,21 +25,37 @@ Here are the main sections of the website:
 <table>
   <tr>
     <td align="center" width="50%">
+<<<<<<< HEAD
       <img src="screenshot/1.png" alt="Hero Section" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
       <br /><strong>🔹 Hero Section</strong>
     </td>
     <td align="center" width="50%">
       <img src="screenshot/2.png" alt="Product Cards" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+=======
+      <img src="/screenshot/1.png" alt="Hero Section" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+      <br /><strong>🔹 Home Section</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="/screenshot/2.png" alt="Product Cards" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+>>>>>>> 9465ab9eb29ecafcc125c74a80bca786ea37cb6a
       <br /><strong>🛍️ Product Cards</strong>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
+<<<<<<< HEAD
       <img src="screenshot/3.png" alt="Features Section" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
       <br /><strong>🚀 Features Section</strong>
     </td>
     <td align="center" width="50%">
       <img src="screenshot/4.png" alt="Footer" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+=======
+      <img src="/screenshot/3.png" alt="Features Section" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+      <br /><strong>🚀 Features Section</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="/screenshot/4.png" alt="Footer" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+>>>>>>> 9465ab9eb29ecafcc125c74a80bca786ea37cb6a
       <br /><strong>🌈 Gradient Footer</strong>
     </td>
   </tr>

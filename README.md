@@ -25,21 +25,21 @@ Here are the main sections of the website:
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="screenshot/1.jpg" alt="Hero Section" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+      <img src="screenshot/1.png" alt="Hero Section" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
       <br /><strong>🔹 Hero Section</strong>
     </td>
     <td align="center" width="50%">
-      <img src="screenshot/2.jpg" alt="Product Cards" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+      <img src="screenshot/2.png" alt="Product Cards" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
       <br /><strong>🛍️ Product Cards</strong>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="screenshot/3.jpg" alt="Features Section" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+      <img src="screenshot/3.png" alt="Features Section" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
       <br /><strong>🚀 Features Section</strong>
     </td>
     <td align="center" width="50%">
-      <img src="screenshot/4.jpg" alt="Footer" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+      <img src="screenshot/4.png" alt="Footer" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
       <br /><strong>🌈 Gradient Footer</strong>
     </td>
   </tr>
